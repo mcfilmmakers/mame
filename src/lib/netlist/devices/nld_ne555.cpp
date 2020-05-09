@@ -130,7 +130,7 @@ namespace netlist
 			register_subalias("7", "A.DISCH");    // Pin 7
 			register_subalias("8", "A.VCC");      // Pin 8
 		}
-		NETLIB_RESETI() {}
+		NETLIB_RESETI() { A.reset(); }
 		NETLIB_UPDATEI() {}
 	private:
 		NETLIB_SUB(NE555) A;
